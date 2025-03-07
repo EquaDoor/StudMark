@@ -1,0 +1,75 @@
+:root {
+    --wht01: #FFFFFF;
+    --wht02: #f0f0f0;
+    --wht03: #A0A5AC;
+    --wht04: #3b3d41;
+    --wht05: #fbfbfd;
+    --wht06: #eeeeee;
+
+    --drk01: #181a1b;
+    --drk02: #202325;
+    --drk03: #b1b1b1;
+    --drk04: #e4e4e4;
+    --drk05: #202325;
+    --drk06: #202325;
+
+    --gradient: linear-gradient(90deg, var(--wht03) 0%, var(--wht04) 100%);
+
+    --sidebar-left-offset: 30px;
+    --sidebar-space: 5px 0;
+    /* --sidebar-space: 5px 0; */
+    --sidebar-text-weight: 450;
+    --sidebar-logo-text-weight: 550;
+    --sidebar-font-size: 0.9125rem;
+
+    --main-offset: 35px 65px;
+    --about-offset: 35px 120px;
+    --ideas-offset: 35px 24%;
+    --post-offset: 35px 24%;
+
+    --phone-main-offset: 30px 25px;
+    --phone-about-offset: 30px 25px;
+    --phone-ideas-offset: 30px 25px;
+    --phone-post-offset: 30px 25px;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: var(--wht04);
+    box-sizing: border-box;
+
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+    resize: none;
+}
+
+html, body {
+    background: var(--drk02);
+    padding: 0;
+	margin: 0;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {display: none;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+/* --------------------------------------------------------------------------- */
+
+body {
+    position: fixed; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 1fr;
+    /* background-color: var(--wht01); */
+    background-color: pink;
+}

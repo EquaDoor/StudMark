@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="{% static 'core/manifest.json' %}">
+    <link rel="shortcut icon" href="#">
+    <!-- <link rel="icon" type="image/x-icon" href="{% static 'core/img/logo.ico' %}"/> -->
+    <title>StudMark</title>
+    <!-- <title>{{ title }}</title> -->
+
+    <link type="text/css" href="{% static 'core/css/style.css' %}" rel="stylesheet"/>
+    <meta name="csrf_token" content="{{ csrf_token }}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <!-- !!!!       /\ RELOADER /\       !!! -->
+</head>
+<body>
+    
+    <main id="content">{% block content %}{% endblock %}</main>
+
+</body>
+</html>
