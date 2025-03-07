@@ -1,0 +1,2 @@
+# StudMark
+ Cruse db project
